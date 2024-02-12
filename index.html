@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="flex nav">
+        <div class="container flex nav-inside-div">
+            <a href="#" class="link">
+                <h2 class="logo">TRaVeL</h2>
+            </a>
+            <div class="menu-items flex">
+                <a href="#about" class="link">About Us</a>
+                <a href="#Destinations" class="link">Destinations</a>
+                <a href="#feedback" class="link">Reviews</a>
+                <a href="#contact" class="link">Contact Us</a>
+                <button class="secondary-btn" onclick="showLoginPage()">Sign In</button>
+                <button class="primary-btn" onclick="showResisterPage()">Sign Up</button>
+            </div>
+
+            
+            <i class="ri-menu-3-line menu-icon"></i>
+        </div>
+    </div>
+
+
+  <!-- log-in-section -->
+ 
+<div class="login-form">
+  <div class="login-head">
+    
+    <h2>Login Form</h2>
+    <img class="close-login-icon" onclick="showLoginPage()"   src="close-fill.png" alt="">
+  </div>
+  <form action="#">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <input class="pro-btn"  type="submit" value="Login">
+
+      <div class="forgot-password">
+          <a class="login-link" href="#">Forgot password?</a>
+      </div>
+
+      <div class="register-link ">
+          <p>Don't have an account? <a class="login-link" href="#"  onclick="openResisterFromLogin()">Register</a></p>
+      </div>
+  </form>
+  <p class="or">OR</p>
+  <div class="sec-btn">
+      <img src="google-logo-9808.png" alt="google-logo">
+      <a href="#">Login with Google</a>
+  </div>
+</div>
+
+<!-- resister-form -->
+
+<div class="resister-form">
+  <div class="login-head">
+    
+    <h2>Resister Form</h2>
+    <img class="close-login-icon" onclick="showResisterPage()"   src="close-fill.png" alt="">
+  </div>
+  <form action="#">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create password" required>
+       
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Confirm password" required>
+
+      <input class="pro-btn"  type="submit" value="Resister">
+
+      <div class="register-link ">
+          <p>Already have an account? <a class="login-link" href="#" onclick="openloginFromResister()">Login</a></p>
+      </div>
+  </form>
+  <p class="or">OR</p>
+  <div class="sec-btn">
+      <img src="google-logo-9808.png" alt="google-logo">
+      <a href="#">Login with Google</a>
+  </div>
+</div>
+
+
+  <!-- header-section -->
+  <header  >
+    
+    <div class="header-content container flex ">
+        
+        <div class="header-content-left-part flex">
+            <h1>Life is short and the world is wide!</h1>
+            <p>
+                We need to take you on an adventure where your personality enjoy the stunning magnificence of India.
+            </p>
+
+              <button class="primary-btn ">Lets Travel</button>
+           
+            
+        </div>
+
+        <div class="header-right-part flex">
+          <div class="header-img-right-part flex">
+            <img src="./travelPic.png" alt="header-img">
+        </div>
+        </div>
+        
+    </div>
+    
+  </header>
+   
+
+  <!-- explore-destinations-cards-section -->
+  <section class="explore-destinations" id="Destinations">
+    <div class="explore-content container">
+        <h2>Explore to <span>Destinations</span></h2>
+        <p>
+            There's a sunrise and sunset every single day,
+            And they are absolutely free.Dont miss many of them.
+        </p>
+    </div>
+    <div class="destinations-cards container flex">
+      
+        <div class="card">
+            <div class="card-img">
+             <img src="./laksha.jpg" alt="Lakshadwip">
+            </div>
+            <div class="card-text"> 
+     
+             <h3>Lakshadwip</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, earum.</p>
+              <h4>&#x20B9;10000/-
+             </h4>
+             <p>from <span>1 jan</span>  To <span>5 jan</span></p>
+             <button class="primary-btn">Book</button>
+            </div>
+             
+           </div> 
+
+
+           <div class="card">
+            <div class="card-img">
+             <img src="./img11.jpg" alt="Lakshadwip">
+            </div>
+            <div class="card-text"> 
+     
+             <h3>Mumbai</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, earum.</p>
+              <h4>&#x20B9;8000/-
+             </h4>
+             <p>from <span>13 jan</span>  To <span>20 jan</span></p>
+             <button class="primary-btn">Book</button>
+            </div>
+             
+           </div>
+
+           <div class="card">
+            <div class="card-img">
+             <img src="./img13.jpg" alt="Lakshadwip">
+            </div>
+            <div class="card-text"> 
+     
+             <h3>Delhi</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, earum.</p>
+              <h4>&#x20B9;9000/-
+             </h4>
+             <p>from <span>3 jan</span>  To <span>8 jan</span></p>
+             <button class="primary-btn">Book</button>
+
+            </div>
+             
+           </div>
+
+           <div class="card">
+            <div class="card-img">
+             <img src="./img12.jpg" alt="Lakshadwip">
+            </div>
+            <div class="card-text"> 
+     
+             <h3>Manali</h3>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, earum.</p>
+              <h4>&#x20B9;5000/-
+             </h4>
+             <p>from <span>6 jan</span>  To <span>12 jan</span></p>
+             <button class="primary-btn">Book</button>
+            </div>
+             
+           </div>
+    </div>
+  </section>
+   
+  <!-- about-section -->
+  <section id="about">
+      <div class="about-div container flex">
+        <!-- about-left-side -->
+        <div class="about-left">
+            <div class="explorer-card about-card">
+              <img src="peoples.png" alt="">
+              <h3>100k+</h3>
+              <p>Our Explorers</p>
+            </div>
+            <div class="trips-card about-card">
+                <img src="map-2-line.png" alt="">
+                <h3>10k+</h3>
+                <p>More Trips </p>
+            </div>
+            <div class="locations-card about-card">
+                <img src="earth-fill.png" alt="">
+                <h3>5k+</h3>
+                <p>Destinations</p>
+            </div>
+        </div>
+        <!-- about-right-side -->
+        <div class="about-right flex">
+            <h2>Wite our experience we will serve you</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quibusdam deleniti rerum soluta, harum quidem perspiciatis, nulla fugit explicabo animi dignissimos tempore? Vel inventore ipsa quae, id saepe accusamus est minus ad fugiat, debitis eos! Officiis, modi ut natus earum deserunt eum veniam aut, totam placeat impedit eligendi. Soluta, officiis.</p>
+            <button class="primary-btn">Explore More About Us</button>
+        </div>
+
+      </div>
+  </section>
+  
+  <!-- feedback-section -->
+  <section id="feedback">
+     <div class="feedback-div container">
+        <h2>What our traveller says about Us:</h2>
+        <div class="feedback-sidebar">
+          <div class="feedback-card flex">
+            <div class="profile-pic"></div>
+            <h3>Raja Babu</h3>
+            <p><span>Nagpur</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia eum ad tempore vitae dolore?</p>
+          </div>
+
+          <div class="feedback-card flex">
+            <div class="profile-pic"></div>
+            <h3>Shyam Baba</h3>
+            <p><span>Gondia</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia eum ad tempore vitae dolore?</p>
+          </div>
+
+          <div class="feedback-card flex">
+            <div class="profile-pic"></div>
+            <h3>Arvind bhai</h3>
+            <p><span>Delhi</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia eum ad tempore vitae dolore?</p>
+          </div>
+
+          <div class="feedback-card flex">
+            <div class="profile-pic"></div>
+            <h3>Rupa bahen</h3>
+            <p><span>Mumbai</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia eum ad tempore vitae dolore?</p>
+          </div>
+
+          <div class="feedback-card flex">
+            <div class="profile-pic"></div>
+            <h3>Lashmi bai
+            </h3>
+            <p><span>Nashik</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia eum ad tempore vitae dolore?</p>
+          </div>
+        </div>
+     </div>
+  </section>
+
+  <!-- subscribe-section -->
+
+  <section class="subscribe-section" id="contact">
+      <div class="subscribe-div container flex">
+        <h2>Subscribe to get the latest news about us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quidem aspernatur, sed explicabo assumenda quos eos eaque blanditiis quod alias.</p>
+        <div class="subscribe-div-input flex">
+          <input type="email" placeholder="example@gmail.com">
+          <button class="primary-btn">subscribe</button>
+        </div>
+      </div>
+  </section>
+
+<!-- footer -->
+  <footer>
+    <div class="main-footer container flex">
+      <div class="col1 " >
+            <ul><li>
+              <a href="#" class="link" >
+                <h2 class="logo">TRaVeL</h2>
+              </a></li>
+              <li><a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-mail-line"></i></a>
+              <a href="#"><i class="ri-twitter-x-line"></i></a>
+              <a href="#"><i class="ri-linkedin-box-fill"></i></a></li>
+            </ul>
+           
+          
+          </div>
+
+          <div class="col2">
+             <ul>
+              <li><h3>Support</h3></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Safety Information</a></li>
+              <li><a href="#">Cancellation Options</a></li>
+              <li><a href="#">Our covid-19 Response</a></li>
+              <li><a href="#">Try Hosting</a></li>
+             </ul>
+          </div>
+
+          <div class="col3">
+            <ul>
+              <li><h3>Company</h3></li>
+              <li><a href="#">Why Travel</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Accesibility</a></li>
+             </ul>
+          </div>
+          <div class="col4">
+            <ul>
+              <li><h3>About Us</h3></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">New Features</a></li>
+              <li><a href="#">Our founders</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Invester</a></li>
+             </ul>
+          </div>
+      </div>
+      <div class="sub-footer-div">
+        <div class="sub-footer container flex">
+          <h3>&#169;2024 TRaVeL, All Rights Reserved</h3>
+          <h3><a href="#">Terms&Conditions</a>.privacy</h3>
+     </div>
+
+      </div>
+      
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+   <link rel="stylesheet" href="loginstyle.css">
+   <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+     
+</head>
+<body>
+
+    <div class="resister-form">
+        <div class="login-head">
+          
+          <h2>Resister Form</h2>
+          <img class="close-login-icon" onclick="showResisterPage()"   src="close-fill.png" alt="">
+        </div>
+        <form action="#">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+      
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create password" required>
+             
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Confirm password" required>
+
+            <input class="pro-btn"  type="submit" value="Resister">
+      
+            <!-- <div class="forgot-password">
+                <a class="login-link" href="#">Forgot password?</a>
+            </div> -->
+      
+            <div class="register-link ">
+                <p>Already have an account? <a class="login-link" href="#">Login</a></p>
+            </div>
+        </form>
+        <p class="or">OR</p>
+        <div class="sec-btn">
+            <img src="google-logo-9808.png" alt="google-logo">
+            <a href="#">Login with Google</a>
+        </div>
+      </div>
+
+</body>
+</html>
